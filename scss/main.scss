@@ -1,0 +1,74 @@
+@import './_responsive_mixins';
+
+body {
+    padding: 80px 0;
+    background: #f2f2f2;
+}
+
+#component {
+    padding: 24px;
+    border-radius: 18px;
+    background-color: #FFFFFF;
+    position: relative;
+
+    .wrapper {
+        align-items: center;
+
+        .img-wrapper {
+            padding-left: 0;
+
+            img {
+                max-height: 160px;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            .role-wrapper {
+                border-radius: 14px;
+                padding: 7px 8px;
+                background-color: #F9FAFB;
+                border: 1px solid #EAECF0;
+                margin-bottom: 17px;
+                box-shadow: 0 1px 2px rgb(58 75 83 / 8%);
+
+                .role {
+                    color: #3A4B53;
+                    margin-bottom: 0;
+                }
+            }
+
+            .title {
+                margin-bottom: 16px;
+                color: #222326;
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            .subtitle {
+                margin-bottom: 0;
+                color: #222326a8;
+                font-size: 16px;
+                font-weight: 500;
+                max-width: 608px;
+            }
+        }
+    }
+
+    .options {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        button {
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+    }
+}
